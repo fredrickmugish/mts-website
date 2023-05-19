@@ -43,42 +43,7 @@
   @include('header')
 <!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  @include('hero')
- <!-- End Hero -->
-
-  <main id="main">
-    <!-- ======= About Section ======= -->
-    @include('about')
-    <!-- End About Section -->
-
-  
-
-
-    <!-- ======= Services Section ======= -->
-    @include('services')
-   <!-- End Services Section -->
-
-   
-
-    <!-- ======= Portfolio Section ======= -->
-    @include('portfolio')
-   <!-- End Portfolio Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    @include('testimonials')
-    <!-- End Testimonials Section -->
-
-   
-
-
-   
-
-    <!-- ======= Contact Section ======= -->
-    @include('contact')
-    <!-- End Contact Section -->
-
-  </main><!-- End #main -->
+  @yield('content')
 
   <!-- ======= Footer ======= -->
   @include('footer')

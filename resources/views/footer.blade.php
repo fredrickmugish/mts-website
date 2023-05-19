@@ -23,19 +23,17 @@
           <div class="col-lg-2 col-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <strong><li><i class="bi bi-chevron-right"></i> Web Design</li></strong>
-              <strong><li><i class="bi bi-chevron-right"></i> Web Development </li></strong>
-             <strong><li><i class="bi bi-chevron-right"></i> Software Development</li></strong> 
-              <strong><li><i class="bi bi-chevron-right"></i>Graphic Design</li></strong>
+              <strong> Web Development </strong>
+             <strong>Software Development</strong> 
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Contact Us</h4>
+            <h4>Company</h4>
             <p>
              
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              <strong>Software company</strong> 
+              
             </p>
 
           </div>

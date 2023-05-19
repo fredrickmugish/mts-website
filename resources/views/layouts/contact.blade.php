@@ -1,3 +1,5 @@
+@extends('layouts.web')
+@section('content')
 <section id="contact" class="contact">
 
     <div class="container" data-aos="fade-up">
@@ -41,22 +43,22 @@
               </div>
             </div>
           </div>
+
         </div>
 
 
 
-
-
+     
         <div class="col-lg-6">
-        
-          
 
-  @if (session()->has('message'))
-  <div class="alert alert-success">
-    <button type="button" class="close" data-dismiss="alert"></button>
- {{ session()->get('message') }}
-  </div>
-    @endif
+
+          @if (session()->has('message'))
+          <div class="alert alert-success">
+       <button type="button" class="close" data-dismiss="alert"></button>
+        {{ session()->get('message')}}
+            </div>
+          @endif
+
 
 
           <form action="{{ url('/contactupload') }}" method="post"  enctype="multipart/form-data">
@@ -82,7 +84,14 @@
             </div>
           </form>
 
- 
+
+
+
+
+
+
+
+          
 
         </div>
 
@@ -91,4 +100,4 @@
     </div>
 
   </section>
-  
+  @endsection
