@@ -44,6 +44,33 @@
         </a>
       </li>
 
+      <li class="nav-item menu-items">
+        <a class="nav-link" href="{{ ('/servicesect') }}">
+          <span class="menu-icon">
+            <i class="mdi mdi-speedometer"></i>
+          </span>
+          <span class="menu-title">Services Section</span>
+        </a>
+      </li>
+
+
+      <li class="nav-item menu-items">
+        <a class="nav-link" href="{{ ('/portfoliosect') }}">
+          <span class="menu-icon">
+            <i class="mdi mdi-speedometer"></i>
+          </span>
+          <span class="menu-title">Portfolio Section</span>
+        </a>
+      </li>
+
+      <li class="nav-item menu-items">
+        <a class="nav-link" href="{{ ('/testmonialsect') }}">
+          <span class="menu-icon">
+            <i class="mdi mdi-speedometer"></i>
+          </span>
+          <span class="menu-title">Testmonial Section</span>
+        </a>
+      </li>
      
       <li class="nav-item menu-items">
         <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">

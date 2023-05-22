@@ -2,6 +2,7 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="{{ url('/') }}" class="logo d-flex align-items-center">
+        <img src="assets/img/mts.jpg" alt="">
         <span>MTS TECH </span>
       </a>
 

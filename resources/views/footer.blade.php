@@ -3,7 +3,8 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="{{ url('/') }}" class="logo d-flex align-items-center">
+              <img src="assets/img/mts.jpg" alt="">
               <span>MTS TECH</span>
             </a>
             <strong><p>Follow Us on social Media to connect with us</p></strong>

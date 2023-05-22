@@ -7,6 +7,12 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\Contact;
 use App\Models\Hero;
 use App\Models\About;
+use App\Models\Service;
+use App\Models\Service1;
+use App\Models\Portfolio1;
+use App\Models\Portfolio;
+use App\Models\Testmonial1;
+use App\Models\Testmonial;
 
 class HomeController extends Controller
 {
@@ -14,7 +20,14 @@ class HomeController extends Controller
 
         $hero = hero::all();
         $about = about::all();
-        return view('home', compact('hero','about'));
+        $service = service::all();
+        $service1 = Service1::all();
+        $portfolio1 = portfolio1::all();
+        $portfolio = portfolio::all();
+        $testmonial1 = testmonial1::all();
+        $testmonial = testmonial::all();
+        return view('home', compact('hero','about','service','service1',
+        'portfolio1','portfolio','testmonial1','testmonial'));
     }
 
     public function redirects(){
@@ -52,12 +65,16 @@ class HomeController extends Controller
 
     public function services()
     {
-        return view('layouts.services');
+        $service = service::all();
+        $service1 = Service1::all();
+        return view('layouts.services', compact('service','service1'));
     }
 
     public function portfolio()
     {
-        return view('layouts.portfolio');
+        $portfolio1 = portfolio1::all();
+        $portfolio = portfolio::all();
+        return view('layouts.portfolio', compact('portfolio1','portfolio'));
     }
     
 }

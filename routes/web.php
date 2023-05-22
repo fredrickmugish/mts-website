@@ -51,6 +51,36 @@ Route::get('/update_about/{id}', [AdminController::class, 'update_about']);
 
 Route::post('/updateabout/{id}', [AdminController::class, 'updateabout']);
 
+Route::get('/servicesect', [AdminController::class, 'servicesect']);
+
+Route::post('/service_sect', [AdminController::class, 'service_sect']);
+
+Route::post('/service_sect1', [AdminController::class, 'service_sect1']);
+
+Route::get('/portfoliosect', [AdminController::class, 'portfoliosect']);
+
+Route::post('/portfolio_sect1', [AdminController::class, 'portfolio_sect1']);
+
+Route::post('/portfolio_sect', [AdminController::class, 'portfolio_sect']);
+
+Route::get('/testmonialsect', [AdminController::class, 'testmonialsect']);
+
+Route::post('/testmonial_sect1', [AdminController::class, 'testmonial_sect1']);
+
+Route::post('/testmonial_sect', [AdminController::class, 'testmonial_sect']);
+
+Route::get('/update_service/{id}', [AdminController::class, 'update_service']);
+
+Route::post('/updateservice/{id}', [AdminController::class, 'updateservice']);
+
+Route::get('/delete_service/{id}', [AdminController::class, 'delete_service']);
+
+Route::get('/update_testmonial/{id}', [AdminController::class, 'update_testmonial']);
+
+Route::post('/updatestmonial/{id}', [AdminController::class, 'updatestmonial']);
+
+Route::get('/delete_testmonial/{id}', [AdminController::class, 'delete_testmonial']);
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

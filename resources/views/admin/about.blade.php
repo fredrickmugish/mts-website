@@ -17,7 +17,7 @@
 
 
 
-      <h2>Write About section</h2>
+      <h2>Write about section</h2>
         <form action="{{ url('/about_sect') }}" method="post" enctype="multipart/form-data">
             @csrf
             <lable>Heading: </lable>
@@ -33,7 +33,7 @@
 
         <br><br>
 
-        <h2>Current About section</h2>
+        <h2>Current about section</h2>
         <table style="background-color: black">
           <tr style="background-color: skyblue; color:black">
             <th>Heading</th>
