@@ -12,6 +12,10 @@ use App\Models\Portfolio1;
 use App\Models\Portfolio;
 use App\Models\Testmonial1;
 use App\Models\Testmonial;
+use App\Models\User;
+use Notification;
+use App\Notifications\SendEmailNotification;
+
 
 class AdminController extends Controller
 {
@@ -261,4 +265,26 @@ public function delete_testmonial($id){
    return redirect()->back();
 }
 
+public function sendemail($id){
+
+
+    $contact = contact::find($id);
+   return view('admin.sendemail', compact('contact'));
+  }
+ 
+  public function send_email(Request $request, $id){
+   $contact = contact::find($id);
+
+   $email = [
+      'greeting' => $request->greeting,
+      'body' => $request->body,
+     
+      'endpart' => $request->endpart,
+   ];
+
+   Notification::send($contact, new SendEmailNotification($email));
+   return redirect()->back()->with('message', 'Email sent successfuly');
+
+
+  }
 }

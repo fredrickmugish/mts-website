@@ -1,9 +1,4 @@
 
-<x-app-layout>
-
-</x-app-layout>
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,12 +6,19 @@
   </head>
   <body>
     <div class="container-scroller">
-     @include('admin.navbar')
+     @include('admin.sidebar')
+     @include('admin.header')
      
-    <div style="position: relative; top:100px;">
+
+
+<!----wrapper----->
+<div class="container-fluid page-body-wrapper">
+  <div class="main-panel">
+    <div class="content-wrapper">
 
 
 
+    <div style="position: relative; overflow-x: auto;">
       <h2>Write about section</h2>
         <form action="{{ url('/about_sect') }}" method="post" enctype="multipart/form-data">
             @csrf
@@ -56,12 +58,16 @@
           @endforeach
           
         </table>
-        
-        
-
     </div>
      
    
+
+<!---wrapper---->
+</div>
+</div>
+</div>
+
+
    
     </div>
     @include('admin.scripts')

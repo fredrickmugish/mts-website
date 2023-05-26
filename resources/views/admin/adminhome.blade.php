@@ -1,9 +1,4 @@
 
-<x-app-layout>
-
-</x-app-layout>
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,7 +6,8 @@
   </head>
   <body>
     <div class="container-scroller">
-     @include('admin.navbar')
+     @include('admin.sidebar')
+     @include('admin.header')
       @include('admin.dashboard')
      
    

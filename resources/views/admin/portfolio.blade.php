@@ -1,9 +1,4 @@
 
-<x-app-layout>
-
-</x-app-layout>
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,11 +6,17 @@
   </head>
   <body>
     <div class="container-scroller">
-     @include('admin.navbar')
-    
+     @include('admin.sidebar')
+    @include('admin.header')
+
+ <!----wrapper----->
+ <div class="container-fluid page-body-wrapper">
+  <div class="main-panel">
+    <div class="content-wrapper">
+      
 
 
-     <div style="position: relative; top:100px;">
+     <div style="position: relative; overflow-x: auto;">
 
         <h2>Write portfolio section1</h2>
         <form action="{{ url('/portfolio_sect1') }}" method="post" enctype="multipart/form-data">
@@ -24,7 +25,7 @@
             <input type="text" name="head" style="color:black" required><br>
 
             <lable>Description: </lable>
-            <input type="text" name="description" style="color:black" required><br>
+             <input type="text" name="description" style="color:black" required><br>
 
             <input type="submit" value="Write" class="btn btn-primary" required>
         </form>
@@ -41,9 +42,17 @@
           
             <input type="submit" value="Write" class="btn btn-primary" required>
         </form>
-   
     </div>
    
+
+
+<!---wrapper---->
+</div>
+</div>
+</div>
+
+
+
     </div>
     @include('admin.scripts')
   </body>

@@ -1,9 +1,4 @@
 
-<x-app-layout>
-
-</x-app-layout>
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,11 +6,16 @@
   </head>
   <body>
     <div class="container-scroller">
-     @include('admin.navbar')
-    
+     @include('admin.sidebar')
+     @include('admin.header')
+
+      <!----wrapper----->
+   <div class="container-fluid page-body-wrapper">
+    <div class="main-panel">
+      <div class="content-wrapper">
 
 
-     <div style="position: relative; top:100px;">
+     <div style="position: relative; overflow-x: auto;">
 
         <h2>Write services section1</h2>
         <form action="{{ url('/service_sect1') }}" method="post" enctype="multipart/form-data">
@@ -66,11 +66,16 @@
           @endforeach
           
         </table>
-        
-   
     </div>
    
-    </div>
+
+  <!---wrapper---->
+</div>
+</div>
+</div>
+
+    
+  </div>
     @include('admin.scripts')
   </body>
 </html>

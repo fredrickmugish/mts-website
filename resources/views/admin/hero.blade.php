@@ -1,8 +1,4 @@
 
-<x-app-layout>
-
-</x-app-layout>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,12 +7,17 @@
   </head>
   <body>
     <div class="container-scroller">
-     @include('admin.navbar')
-     
-    <div style="position: relative; top:100px;">
+     @include('admin.sidebar')
+     @include('admin.header')
 
 
+<!----wrapper----->
+<div class="container-fluid page-body-wrapper">
+  <div class="main-panel">
+    <div class="content-wrapper">
 
+
+    <div style="position: relative; overflow-x: auto;">
       <h2>Write hero section</h2>
         <form action="{{ url('/hero_section') }}" method="post" enctype="multipart/form-data">
             @csrf
@@ -52,10 +53,16 @@
   @endforeach
   
 </table>
-
     </div>
      
    
+
+
+<!---wrapper---->
+</div>
+</div>
+</div>
+
    
     </div>
     @include('admin.scripts')

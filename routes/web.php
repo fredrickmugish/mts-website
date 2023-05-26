@@ -81,12 +81,16 @@ Route::post('/updatestmonial/{id}', [AdminController::class, 'updatestmonial']);
 
 Route::get('/delete_testmonial/{id}', [AdminController::class, 'delete_testmonial']);
 
+Route::get('/sendemail/{id}', [AdminController::class, 'sendemail']);
+
+Route::post('/send_email/{id}', [AdminController::class, 'send_email']);
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
     Route::get('/dashboard', function () {
-        return view('dashboard');
+        return view('admin.adminhome');
     })->name('dashboard');
 });

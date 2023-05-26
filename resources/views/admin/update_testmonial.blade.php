@@ -12,13 +12,17 @@
   </head>
   <body>
     <div class="container-scroller">
-     @include('admin.navbar')
+     @include('admin.sidebar')
+     @include('admin.header')
      
-    <div style="position: relative; top:100px;">
 
+    <!----wrapper----->
+    <div class="container-fluid page-body-wrapper">
+      <div class="main-panel">
+        <div class="content-wrapper">
+          
 
-
-
+    <div style="position: relative; overflow-x: auto;">
       <h2>Update testmonial section</h2>
         <form action="{{ url('/updatestmonial', $testmonial->id) }}" method="post" enctype="multipart/form-data" >
             @csrf
@@ -45,6 +49,14 @@
     </div>
      
    
+  
+
+<!---wrapper---->
+</div>
+</div>
+</div>
+
+
    
     </div>
     @include('admin.scripts')

@@ -21,6 +21,7 @@
             <div class="portfolio-links">
               <a href="assets/img/portfolio/p-2.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" 
               title="The system help users make appointment to doctors in the hospital"><i class="bi bi-plus"></i></a>
+              
             </div>
           </div>
         </div>

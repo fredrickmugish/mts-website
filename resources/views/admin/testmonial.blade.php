@@ -1,8 +1,4 @@
 
-<x-app-layout>
-
-</x-app-layout>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,12 +7,19 @@
   </head>
   <body>
     <div class="container-scroller">
-     @include('admin.navbar')
+     @include('admin.sidebar')
+     @include('admin.header')
     
 
 
-     <div style="position: relative; top:100px;">
+      <!----wrapper----->
+   <div class="container-fluid page-body-wrapper">
+    <div class="main-panel">
+      <div class="content-wrapper">
+        
 
+
+     <div style="position: relative; overflow-x: auto;">
         <h2>Write testmonial section1</h2>
         <form action="{{ url('/testmonial_sect1') }}" method="post" enctype="multipart/form-data">
             @csrf
@@ -35,8 +38,8 @@
         <form action="{{ url('/testmonial_sect') }}" method="post" enctype="multipart/form-data">
             @csrf
 
-            <lable>Message: </lable>
-            <input type="text" name="paragraph" style="color:black" required><br>
+            <lable>Message: </lable> <br>
+            <textarea type="text" name="paragraph" style="color:black; width:500px; height:100px" required></textarea><br>
 
             <lable>Image: </lable>
             <input type="file" name="image" required><br>
@@ -73,9 +76,17 @@
           @endforeach
           
         </table>
-   
     </div>
    
+
+
+<!---wrapper---->
+</div>
+</div>
+</div>
+
+
+
     </div>
     @include('admin.scripts')
   </body>
