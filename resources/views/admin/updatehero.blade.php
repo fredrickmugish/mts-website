@@ -29,10 +29,10 @@
       <h2>Update hero section</h2>
         <form action="{{ url('/updatehero', $hero->id) }}" method="post" enctype="multipart/form-data" >
             @csrf
-            <lable>Title: </lable>
+            <lable>Title: </lable><br>
             <input type="text" name="title" value="{{ $hero->title }}" style="color:black" required><br>
-            <lable>Paragraph: </lable>
-            <input type="text" name="paragraph" value="{{ $hero->paragraph }}"style="color:black" required><br>
+            <lable>Paragraph: </lable><br>
+            <input type="text" name="paragraph" value="{{ $hero->paragraph }}" style="color:black" required><br>
 
             <lable>Hero Image: </lable>
             <img height="100" width="100" src="/heroimage/{{ $hero->image }}"><br>
@@ -45,15 +45,6 @@
         </form>
     </div>
      
-
-
-
-<!---wrapper---->
-</div>
-</div>
-</div>
-
-
    
    
     </div>

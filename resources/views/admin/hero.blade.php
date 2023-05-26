@@ -21,10 +21,10 @@
       <h2>Write hero section</h2>
         <form action="{{ url('/hero_section') }}" method="post" enctype="multipart/form-data">
             @csrf
-            <lable>Title: </lable>
+            <lable>Title: </lable><br>
             <input type="text" name="title" style="color:black" required><br>
-            <lable>Paragraph: </lable>
-            <input type="text" name="paragraph" style="color:black" required><br>
+            <lable>Paragraph: </lable><br>
+            <textarea type="text" name="paragraph" style="color:black" required></textarea><br>
             <lable>Hero Image: </lable>
             <input type="file" name="image" required><br>
             <input type="submit" value="Write" class="btn btn-primary" required>
