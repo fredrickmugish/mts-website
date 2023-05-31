@@ -49,7 +49,7 @@
 
   <main id="main">
     <!-- ======= About Section ======= -->
-    @include('about')
+   <!---- @include('about') ----->
     <!-- End About Section -->
 
   

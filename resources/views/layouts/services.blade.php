@@ -22,7 +22,7 @@
        
           <h3>{{ $service->title }}</h3>
           <p>{{ $service->paragraph }}</p>
-          <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+          <a href="#" class="read-more"><span>Connect us</span> <i class="bi bi-arrow-right"></i></a>
         </div>
       </div>
     

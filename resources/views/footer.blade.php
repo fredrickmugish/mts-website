@@ -17,23 +17,25 @@
           </div>
 
           <div class="col-lg-2 col-6 footer-links">
-            <h4>Mission</h4>
+            <h4>Vision</h4>
         <strong><p>To make your business better through technology</p></strong> 
           </div>
 
           <div class="col-lg-2 col-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <strong> Web Development </strong>
-             <strong>Software Development</strong> 
+            <a href="{{ url('/services') }}"><li> Web Design</li> </a>
+              <a href="{{ url('/services') }}"> <li>Web Development</li> </a>
+             <a href="{{ url('/services') }}" <li> Software Development</li> </a>
+               
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Company</h4>
+            <h4>Mission</h4>
             <p>
              
-              <strong>Software company</strong> 
+              <strong>Empowering your Technology</strong> 
               
             </p>
 
