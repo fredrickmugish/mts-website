@@ -2,8 +2,10 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <a href="{{ url('/') }}" class="logo d-flex align-items-center">
-        <img src="assets/img/mts.jpg" alt="">
-        <span>MTS TECH </span>
+        @foreach ($logo as $logo)
+        <img src="/logoimage/{{ $logo->image }}" alt=""> 
+        <span>{{ $logo->name }}</span>
+        @endforeach
       </a>
 
       <nav id="navbar" class="navbar">

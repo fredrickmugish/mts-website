@@ -21,6 +21,7 @@
 <tr style="background-color: skyblue; color:black">
     <th style="padding: 10px">Customer Name</th>
     <th style="padding: 10px">Email</th>
+    <th style="padding: 10px">Phone</th>
     <th style="padding: 10px">Message</th>
     <th style="padding: 10px">Action</th>
 </tr>
@@ -29,6 +30,7 @@
 <tr align="center">
     <td>{{ $contact->name }}</td>
     <td>{{ $contact->email }}</td>
+    <td>{{ $contact->phone }}</td>
     <td>{{ $contact->message }}</td>
     <td><a href="{{ url('/sendemail', $contact->id) }}" class="btn btn-primary">Send Email</a></td>
 </tr> 

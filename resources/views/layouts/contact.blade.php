@@ -73,6 +73,10 @@
                 <input type="email" class="form-control" name="email" placeholder="Your Email" required>
               </div>
 
+              <div class="col-md-6 ">
+                <input type="text" class="form-control" name="phone" placeholder="Your Phone Number" required>
+              </div>
+
               <div class="col-md-12">
                 <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
               </div>

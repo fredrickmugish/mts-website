@@ -85,6 +85,12 @@ Route::get('/sendemail/{id}', [AdminController::class, 'sendemail']);
 
 Route::post('/send_email/{id}', [AdminController::class, 'send_email']);
 
+Route::get('/logo', [HomeController::class, 'logo']);
+
+Route::post('/upload_logo', [HomeController::class, 'upload_logo']);
+
+Route::get('/delete_logo/{id}', [HomeController::class, 'delete_logo']);
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

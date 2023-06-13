@@ -4,9 +4,12 @@
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
             <a href="{{ url('/') }}" class="logo d-flex align-items-center">
-              <img src="assets/img/mts.jpg" alt="">
-              <span>MTS TECH</span>
+              @foreach ($logo as $logo)
+              <img src="/logoimage/{{ $logo->image }}" alt="">
+              <span>{{ $logo->name }}</span>
+              @endforeach
             </a>
+
             <strong><p>Follow Us on social Media to connect with us</p></strong>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
